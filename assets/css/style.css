@@ -1,0 +1,6 @@
+fieldset {background-color: #1b1c20; border: 1px solid #224ecd; padding: 10px }
+label {color: #fff; display: block; text-transform: uppercase; padding: 5px;}
+.form-control {width: 100%; border: none; padding: 7px; display: block;}
+.btn {padding: 7px; background-color: #1b1c20; border-radius: 7px; color: #fff; width: 180px; text-transform: uppercase;}
+body {background: url(../images/background.png); no-repeat fixed;}
+.container {margin-left: 12px; margin-top: 80px; width: 750px}
