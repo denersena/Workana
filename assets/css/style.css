@@ -1,6 +1,67 @@
-fieldset {background-color: #1b1c20; border: 1px solid #224ecd; padding: 10px }
-label {color: #fff; display: block; text-transform: uppercase; padding: 5px;}
-.form-control {width: 100%; border: none; padding: 7px; display: block;}
-.btn {padding: 7px; background-color: #1b1c20; border-radius: 7px; color: #fff; width: 180px; text-transform: uppercase;}
-body {background: url(../images/background.png); no-repeat fixed;}
-.container {margin-left: 12px; margin-top: 80px; width: 750px}
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Tw Cen MT Condensed';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Tw Cen MT Condensed'), url('../fonts/TCCM____.woff') format('woff');
+}
+
+body {
+    background: url(../images/background.png); no-repeat fixed;
+    font-family: 'Tw Cen MT Condensed';
+}
+.clearfix {
+    clear: both;
+    overflow: hidden;
+    position: relative;
+}
+.columns {
+    display: flex;
+    justify-content: space-around
+}
+.columns label {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    margin: 10px 12px 10px 0;
+    width: 750px;
+}
+.header {
+    text-align: center;
+    margin: 10px 0;
+}
+.from-group {
+    background-color: #1b1c20;
+    border: 1px solid #224ecd;
+    padding: 10px
+}
+label, .label {
+    color: #fff;
+    display: block;
+    text-transform: uppercase;
+    padding: 5px;
+    font-size: 17px;
+    font-size: 400;
+}
+.form-control {
+    width: 100%;
+    border: none;
+    padding: 7px;
+    display: block;
+}
+.btn {
+    padding: 7px; 
+    background-color: #1b1c20; 
+    border-radius: 7px; 
+    color: #fff;
+    width: 180px;
+    text-transform: uppercase;
+    float: right;
+    cursor: pointer;
+    font-size: 16px;
+    border: 2px solid #2d2d2d;
+}

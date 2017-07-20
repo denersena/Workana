@@ -10,45 +10,58 @@
 </head>
 <body>
 <div class="container">
-    <form action="" method="post">
-        <fieldset>
-            <label for="">Nome do Mod:</label>
-            <input type="text" class="form-control" name="" id="" required>
-        </fieldset>
-        <fieldset>
-            <label for="">Link da imagem do mod:</label>
-            <input type="text" class="form-control" name="" id="" required>
-        </fieldset>
-        <fieldset>
-            <label for="">Para qual jogo é o mod:</label>
-            <label><input type="checkbox" name="" id="">Euro Truck Simulator 2</label>
-            <label><input type="checkbox" name="" id="">American Truck Simulator</label>
-            <label><input type="checkbox" name="" id="">Farming Simulator 17</label>
-        </fieldset>
-        <fieldset>
-            <label for="">Nome ou apelido do desenvolvedor do mod:</label>
-            <input type="text" class="form-control" name="" id="" required>
-        </fieldset>
-        <fieldset>
-            <label for="">Versão do jogo para o mod funcionar:</label>
-            <input type="text" class="form-control" name="" id="" required>
-        </fieldset>
-        <fieldset>
-            <label for="">Informações gerais do mod:</label>
-            <textarea class="form-control" name="" id="" cols="10" rows="8"></textarea>
-        </fieldset>
-        <fieldset>
-            <label for="">Link para vídeo:</label>
-            <input type="text" class="form-control" name="" id="">
-        </fieldset>
-        <fieldset>
-            <label for="">Link para download do mod:</label>
-            <input type="text" class="form-control" name="" id="" required>
-        </fieldset>
-        <fieldset>
+    <div class="header">
+        <img src="assets/images/brand.png" alt="Image">
+    </div><!-- /.header -->
+    <form action="app/submit.php" method="post">
+        <div class="from-group">
+            <label for="modName">Nome do Mod:</label>
+            <input type="text" class="form-control" name="mod_name" id="modName" required>
+        </div>
+
+        <div class="from-group">
+            <label for="modImage">Link da imagem do mod:</label>
+            <input type="text" class="form-control" name="mod_image" id="modImage" required>
+        </div>
+
+        <div class="from-group">
+            <span class="label">Para qual jogo é o mod:</span>
+            <div class="columns">
+                <label><input type="radio" name="mod_game">Euro Truck Simulator 2</label>
+                <label><input type="radio" name="mod_game">American Truck Simulator</label>
+                <label><input type="radio" name="mod_game">Farming Simulator 17</label>
+            </div><!-- columns -->
+        </div>
+
+        <div class="from-group">
+            <label for="modAuthor">Nome ou apelido do desenvolvedor do mod:</label>
+            <input type="text" class="form-control" name="mod_author" id="modAuthor" required>
+        </div>
+
+        <div class="from-group">
+            <label for="modVersion">Versão do jogo para o mod funcionar:</label>
+            <input type="text" class="form-control" name="mod_version" id="modVersion" required>
+        </div>
+
+        <div class="from-group">
+            <label for="modInfor">Informações gerais do mod:</label>
+            <textarea class="form-control" name="mod_infor" id="modInfor" cols="10" rows="8"></textarea>
+        </div>
+
+        <div class="from-group">
+            <label for="modVideo">Link para vídeo:</label>
+            <input type="text" class="form-control" name="mod_video" id="modVideo">
+        </div>
+
+        <div class="from-group">
+            <label for="modDownload">Link para download do mod:</label>
+            <input type="text" class="form-control" name="mod_download" id="modDownload" required>
+        </div>
+
+        <div class="from-group clearfix">
             <button type="submit" class="btn">Baixar Modelo</button>
-        </fieldset>
-    </form>
-</div><!-- container -->
+        </div>
+    </form><!-- /form -->
+</div><!-- /.container -->
 </body>
 </html>
