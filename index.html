@@ -35,7 +35,7 @@
 
         <div class="from-group">
             <label for="modAuthor">Nome ou apelido do desenvolvedor do mod:</label>
-            <input type="text" class="form-control" name="mod_author" id="modAuthor" required>
+            <input type="text" class="form-control" name="mod_author" id="modAuthor">
         </div>
 
         <div class="from-group">
@@ -48,15 +48,28 @@
             <textarea class="form-control" name="mod_infor" id="modInfor" cols="10" rows="8"></textarea>
         </div>
 
-        <div class="from-group">
-            <label for="modVideo">Link para vídeo:</label>
-            <input type="text" class="form-control" name="mod_video" id="modVideo">
+        <div class="columns">
+            <div class="from-group">
+                <label for="modVideo">Link para vídeo:</label>
+                <input type="text" class="form-control" name="mod_video" id="modVideo">
+            </div>
+            <div class="from-group">
+                <label for="modCode">Codigo da galeria:</label>
+                <input type="text" class="form-control" name="mod_code" id="modCode">
+            </div>
         </div>
 
-        <div class="from-group">
-            <label for="modDownload">Link para download do mod:</label>
-            <input type="text" class="form-control" name="mod_download" id="modDownload" required>
+        <div class="columns">
+            <div class="from-group">
+                <label for="modOriginal">Link original:</label>
+                <input type="text" class="form-control" name="mod_original" id="modOriginal" required>
+            </div>
+            <div class="from-group">
+                <label for="modSimuladores">Link mod simuladores:</label>
+                <input type="text" class="form-control" name="mod_simuladores" id="modSimuladores" required>
+            </div>
         </div>
+
 
         <div class="from-group clearfix">
             <button type="submit" class="btn">Baixar Modelo</button>

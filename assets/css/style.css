@@ -19,13 +19,15 @@ body {
 }
 .columns {
     display: flex;
-    justify-content: space-around
+    justify-content: space-between;
 }
 .columns label {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 }
-
+.columns .from-group {
+    width: 50%;
+}
 .container {
     margin: 10px 12px 10px 0;
     width: 750px;
@@ -52,6 +54,9 @@ label, .label {
     border: none;
     padding: 7px;
     display: block;
+}
+textarea {
+    resize: none;
 }
 .btn {
     padding: 7px; 
